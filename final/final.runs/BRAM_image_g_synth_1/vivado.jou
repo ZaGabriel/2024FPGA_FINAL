@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Dec 22 03:35:15 2024
+# Process ID: 6644
+# Current directory: C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/BRAM_image_g_synth_1
+# Command line: vivado.exe -log BRAM_image_g.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BRAM_image_g.tcl
+# Log file: C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/BRAM_image_g_synth_1/BRAM_image_g.vds
+# Journal file: C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/BRAM_image_g_synth_1\vivado.jou
+# Running On: DESKTOP-M601PBC, OS: Windows, CPU Frequency: 3408 MHz, CPU Physical cores: 4, Host memory: 34195 MB
+#-----------------------------------------------------------
+source BRAM_image_g.tcl -notrace

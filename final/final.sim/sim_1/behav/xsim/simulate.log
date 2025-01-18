@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module pwm_tb.u_top_dac.u_pcm_rom.u_BRAM_pcm.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: xsimkernel Simulation Memory Usage: 16608 KB (Peak: 16608 KB), Simulation CPU Usage: 17811 ms

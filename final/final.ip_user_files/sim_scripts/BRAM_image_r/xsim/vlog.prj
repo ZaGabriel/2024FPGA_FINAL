@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../final.gen/sources_1/ip/BRAM_image_r/sim/BRAM_image_r.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

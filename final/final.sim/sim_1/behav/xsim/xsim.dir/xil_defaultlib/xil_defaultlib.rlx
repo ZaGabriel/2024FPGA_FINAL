@@ -1,0 +1,21 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_image_b/sim/BRAM_image_b.v,1734805954,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_image_g/sim/BRAM_image_g.v,,BRAM_image_b,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_image_g/sim/BRAM_image_g.v,1734805895,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_image_r/sim/BRAM_image_r.v,,BRAM_image_g,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_image_r/sim/BRAM_image_r.v,1734805810,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/Vga_25MH/Vga_25MH_clk_wiz.v,,BRAM_image_r,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_pcm/sim/BRAM_pcm.v,1734807728,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/src/dac.v,,BRAM_pcm,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/Vga_25MH/Vga_25MH.v,1734702294,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_pcm/sim/BRAM_pcm.v,,Vga_25MH,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/Vga_25MH/Vga_25MH_clk_wiz.v,1734702294,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/Vga_25MH/Vga_25MH.v,,Vga_25MH_clk_wiz,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/final/final.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/pwm_tb.v,1734808706,verilog,,,,pwm_tb,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/src/Divider.v,1734278321,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v,,Divider,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v,1734806522,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/src/VGAControll.v,,Pattern,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/src/VGAControll.v,1734705113,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/src/btn_single_deb.v,,VGAControll,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/src/btn_single_deb.v,1734294424,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/src/dac.v,,btn_single_deb,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/src/dac.v,1734701572,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/src/pcm_rom.v,,dac,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/src/pcm_rom.v,1734812114,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/src/top_dac.v,,pcm_rom,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/src/top_dac.v,1734812105,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/pwm_tb.v,,top_dac,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/src/top_mp3.v,1734712910,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/src/top_vga.v,,top_mp3,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,
+C:/Users/ZaG/Desktop/vivado_project/final/src/top_vga.v,1734799656,verilog,,C:/Users/ZaG/Desktop/vivado_project/final/pwm_tb.v,,top_vga,,,../../../../final.gen/sources_1/ip/Vga_25MH,,,,,

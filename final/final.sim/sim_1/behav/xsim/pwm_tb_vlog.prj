@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../final.gen/sources_1/ip/Vga_25MH" \
+"../../../../final.gen/sources_1/ip/BRAM_pcm/sim/BRAM_pcm.v" \
+"../../../../../src/dac.v" \
+"../../../../../src/pcm_rom.v" \
+"../../../../../src/top_dac.v" \
+"../../../../../pwm_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

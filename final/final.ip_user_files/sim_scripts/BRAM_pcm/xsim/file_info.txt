@@ -1,0 +1,2 @@
+BRAM_pcm.v,verilog,xil_defaultlib,../../../../final.gen/sources_1/ip/BRAM_pcm/sim/BRAM_pcm.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,515 @@
+
+*** Running vivado
+    with args -log top_mp3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_mp3.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source top_mp3.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1003.285 ; gain = 119.391
+Command: read_checkpoint -auto_incremental -incremental C:/Users/ZaG/Desktop/vivado_project/final/final/final.srcs/utils_1/imports/synth_1/top_pwm.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ZaG/Desktop/vivado_project/final/final/final.srcs/utils_1/imports/synth_1/top_pwm.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_mp3 -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11968
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11065] parameter 'Original_Clock' becomes localparam in 'Divider' with formal parameter declaration list [C:/Users/ZaG/Desktop/vivado_project/final/src/Divider.v:18]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1827.008 ; gain = 407.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_mp3' [C:/Users/ZaG/Desktop/vivado_project/final/src/top_mp3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Divider' [C:/Users/ZaG/Desktop/vivado_project/final/src/Divider.v:2]
+	Parameter Custom_clkout_0 bound to: 8000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Divider' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/src/Divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'top_btn_ctrl' [C:/Users/ZaG/Desktop/vivado_project/final/src/top_btn_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'btn_single_deb' [C:/Users/ZaG/Desktop/vivado_project/final/src/btn_single_deb.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'btn_single_deb' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/src/btn_single_deb.v:1]
+WARNING: [Synth 8-7071] port 'btn_state' of module 'btn_single_deb' is unconnected for instance 'u1_btn_single_deb' [C:/Users/ZaG/Desktop/vivado_project/final/src/top_btn_ctrl.v:10]
+WARNING: [Synth 8-7071] port 'btn_negedge' of module 'btn_single_deb' is unconnected for instance 'u1_btn_single_deb' [C:/Users/ZaG/Desktop/vivado_project/final/src/top_btn_ctrl.v:10]
+WARNING: [Synth 8-7023] instance 'u1_btn_single_deb' of module 'btn_single_deb' has 6 connections declared, but only 4 given [C:/Users/ZaG/Desktop/vivado_project/final/src/top_btn_ctrl.v:10]
+WARNING: [Synth 8-7071] port 'btn_state' of module 'btn_single_deb' is unconnected for instance 'u2_btn_single_deb' [C:/Users/ZaG/Desktop/vivado_project/final/src/top_btn_ctrl.v:11]
+WARNING: [Synth 8-7071] port 'btn_negedge' of module 'btn_single_deb' is unconnected for instance 'u2_btn_single_deb' [C:/Users/ZaG/Desktop/vivado_project/final/src/top_btn_ctrl.v:11]
+WARNING: [Synth 8-7023] instance 'u2_btn_single_deb' of module 'btn_single_deb' has 6 connections declared, but only 4 given [C:/Users/ZaG/Desktop/vivado_project/final/src/top_btn_ctrl.v:11]
+WARNING: [Synth 8-7071] port 'btn_state' of module 'btn_single_deb' is unconnected for instance 'u3_btn_single_deb' [C:/Users/ZaG/Desktop/vivado_project/final/src/top_btn_ctrl.v:12]
+WARNING: [Synth 8-7071] port 'btn_negedge' of module 'btn_single_deb' is unconnected for instance 'u3_btn_single_deb' [C:/Users/ZaG/Desktop/vivado_project/final/src/top_btn_ctrl.v:12]
+WARNING: [Synth 8-7023] instance 'u3_btn_single_deb' of module 'btn_single_deb' has 6 connections declared, but only 4 given [C:/Users/ZaG/Desktop/vivado_project/final/src/top_btn_ctrl.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'top_btn_ctrl' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/src/top_btn_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'top_dac' [C:/Users/ZaG/Desktop/vivado_project/final/src/top_dac.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pcm_rom' [C:/Users/ZaG/Desktop/vivado_project/final/src/pcm_rom.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BRAM_pcm' [C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/synth_1/.Xil/Vivado-6856-DESKTOP-M601PBC/realtime/BRAM_pcm_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'BRAM_pcm' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/synth_1/.Xil/Vivado-6856-DESKTOP-M601PBC/realtime/BRAM_pcm_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pcm_rom' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/src/pcm_rom.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dac' [C:/Users/ZaG/Desktop/vivado_project/final/src/dac.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dac' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/src/dac.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_dac' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/src/top_dac.v:1]
+WARNING: [Synth 8-7071] port 'audio_data' of module 'top_dac' is unconnected for instance 'u_top_dac' [C:/Users/ZaG/Desktop/vivado_project/final/src/top_mp3.v:46]
+WARNING: [Synth 8-7023] instance 'u_top_dac' of module 'top_dac' has 8 connections declared, but only 7 given [C:/Users/ZaG/Desktop/vivado_project/final/src/top_mp3.v:46]
+INFO: [Synth 8-6157] synthesizing module 'top_vga' [C:/Users/ZaG/Desktop/vivado_project/final/src/top_vga.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Vga_25MH' [C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/synth_1/.Xil/Vivado-6856-DESKTOP-M601PBC/realtime/Vga_25MH_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Vga_25MH' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/synth_1/.Xil/Vivado-6856-DESKTOP-M601PBC/realtime/Vga_25MH_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'VGAControll' [C:/Users/ZaG/Desktop/vivado_project/final/src/VGAControll.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'VGAControll' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/src/VGAControll.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Pattern' [C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v:1]
+INFO: [Synth 8-3876] $readmem data file '../array_data/play_r.txt' is read successfully [C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v:76]
+INFO: [Synth 8-3876] $readmem data file '../array_data/play_g.txt' is read successfully [C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v:77]
+INFO: [Synth 8-3876] $readmem data file '../array_data/play_b.txt' is read successfully [C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v:78]
+INFO: [Synth 8-3876] $readmem data file '../array_data/pause_r.txt' is read successfully [C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v:80]
+INFO: [Synth 8-3876] $readmem data file '../array_data/pause_g.txt' is read successfully [C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v:81]
+INFO: [Synth 8-3876] $readmem data file '../array_data/pause_b.txt' is read successfully [C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v:82]
+INFO: [Synth 8-3876] $readmem data file '../array_data/dot_r.txt' is read successfully [C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v:84]
+INFO: [Synth 8-3876] $readmem data file '../array_data/dot_g.txt' is read successfully [C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v:85]
+INFO: [Synth 8-3876] $readmem data file '../array_data/dot_b.txt' is read successfully [C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v:86]
+INFO: [Synth 8-6157] synthesizing module 'BRAM_image_r' [C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/synth_1/.Xil/Vivado-6856-DESKTOP-M601PBC/realtime/BRAM_image_r_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'BRAM_image_r' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/synth_1/.Xil/Vivado-6856-DESKTOP-M601PBC/realtime/BRAM_image_r_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'BRAM_image_g' [C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/synth_1/.Xil/Vivado-6856-DESKTOP-M601PBC/realtime/BRAM_image_g_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'BRAM_image_g' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/synth_1/.Xil/Vivado-6856-DESKTOP-M601PBC/realtime/BRAM_image_g_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'BRAM_image_b' [C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/synth_1/.Xil/Vivado-6856-DESKTOP-M601PBC/realtime/BRAM_image_b_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'BRAM_image_b' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/synth_1/.Xil/Vivado-6856-DESKTOP-M601PBC/realtime/BRAM_image_b_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Pattern' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_vga' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/src/top_vga.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'top_mp3' (0#1) [C:/Users/ZaG/Desktop/vivado_project/final/src/top_mp3.v:1]
+WARNING: [Synth 8-6014] Unused sequential element dot_idx_reg was removed.  [C:/Users/ZaG/Desktop/vivado_project/final/src/Pattern.v:133]
+WARNING: [Synth 8-7129] Port btn[3] in module top_btn_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[0] in module top_btn_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_pin[4] in module top_mp3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_pin[3] in module top_mp3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_pin[2] in module top_mp3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_pin[1] in module top_mp3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_pin[0] in module top_mp3 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1924.543 ; gain = 505.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1924.543 ; gain = 505.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1924.543 ; gain = 505.254
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1924.543 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/Vga_25MH/Vga_25MH/Vga_25MH_in_context.xdc] for cell 'u_top_vga/u_Vga_25MH'
+Finished Parsing XDC File [c:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/Vga_25MH/Vga_25MH/Vga_25MH_in_context.xdc] for cell 'u_top_vga/u_Vga_25MH'
+Parsing XDC File [c:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_image_g/BRAM_image_g/BRAM_image_g_in_context.xdc] for cell 'u_top_vga/u_Pattern/u_BRAM_image_g'
+Finished Parsing XDC File [c:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_image_g/BRAM_image_g/BRAM_image_g_in_context.xdc] for cell 'u_top_vga/u_Pattern/u_BRAM_image_g'
+Parsing XDC File [c:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_image_b/BRAM_image_b/BRAM_image_b_in_context.xdc] for cell 'u_top_vga/u_Pattern/u_BRAM_image_b'
+Finished Parsing XDC File [c:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_image_b/BRAM_image_b/BRAM_image_b_in_context.xdc] for cell 'u_top_vga/u_Pattern/u_BRAM_image_b'
+Parsing XDC File [c:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_pcm/BRAM_pcm/BRAM_pcm_in_context.xdc] for cell 'u_top_dac/u_pcm_rom/u_BRAM_pcm'
+Finished Parsing XDC File [c:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_pcm/BRAM_pcm/BRAM_pcm_in_context.xdc] for cell 'u_top_dac/u_pcm_rom/u_BRAM_pcm'
+Parsing XDC File [c:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_image_r/BRAM_image_r/BRAM_image_r_in_context.xdc] for cell 'u_top_vga/u_Pattern/u_BRAM_image_r'
+Finished Parsing XDC File [c:/Users/ZaG/Desktop/vivado_project/final/final/final.gen/sources_1/ip/BRAM_image_r/BRAM_image_r/BRAM_image_r_in_context.xdc] for cell 'u_top_vga/u_Pattern/u_BRAM_image_r'
+Parsing XDC File [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command '/////////////////////////////??ÇÈ?òÂ?åÂæ©Ê≠?////////////////////////////////////////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:1]
+CRITICAL WARNING: [Designutils 20-1307] Command '/////////////////////////////Á´ØÂè£/////////////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'PC_Uart_rxd'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'PC_Uart_txd'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:7]
+CRITICAL WARNING: [Designutils 20-1307] Command '////////////////////////////////??çËäΩ///////////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'BT_Uart_rxd'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'BT_Uart_txd'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'bt_ctrl_o[0]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'bt_ctrl_o[1]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'bt_ctrl_o[2]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'bt_ctrl_o[3]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'bt_ctrl_o[4]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'bt_mcu_int_i'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:19]
+CRITICAL WARNING: [Designutils 20-1307] Command '///////////////////////////////?ü≥Ê∫êÁ´Ø?è£////////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'audio_sd_o'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:23]
+CRITICAL WARNING: [Designutils 20-1307] Command '//////////////////////////////////iic////////////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'pw_iic_scl_io'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'pw_iic_sda_io'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:27]
+CRITICAL WARNING: [Designutils 20-1307] Command '//////////////////////////////////XADCÊ®°Êì¨ËΩâÊ??///////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'XADC_AUX_v_n'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'XADC_AUX_v_p'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'XADC_VP_VN_v_n'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'XADC_VP_VN_v_p'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:33]
+CRITICAL WARNING: [Designutils 20-1307] Command '/////////////////////////////////////5‰∏™Ê?âÈîÆ//////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:35]
+CRITICAL WARNING: [Designutils 20-1307] Command '///////////////////////////////////??ãÈ?úsw0~sw7////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'sw_pin[0]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'sw_pin[1]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'sw_pin[2]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'sw_pin[3]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'sw_pin[4]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'sw_pin[5]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'sw_pin[6]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'sw_pin[7]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:50]
+CRITICAL WARNING: [Designutils 20-1307] Command '//////////////////////////////////??ãÈ?úsw8~sw15/////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[0]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[1]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[2]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[3]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[4]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[5]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[6]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'dip_pin[7]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:60]
+CRITICAL WARNING: [Designutils 20-1307] Command '//////////////////////////////////////LED0~LED15////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'led_pin[8]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'led_pin[9]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'led_pin[10]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'led_pin[11]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'led_pin[12]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'led_pin[13]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led_pin[14]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'led_pin[15]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:80]
+CRITICAL WARNING: [Designutils 20-1307] Command '///////////////////////////////8‰∏?7ÊÆµÈ°ØÁ§∫Âô®/////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[0]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[1]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[2]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[3]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[4]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[5]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[6]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'seg_cs[7]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:90]
+CRITICAL WARNING: [Designutils 20-1307] Command '///////////////////////////////////7ÊÆµÈ°ØÁ§∫Âô®//////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[0]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[1]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[2]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[3]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[4]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[5]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[6]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_0[7]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[0]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[1]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[2]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[3]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[4]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[5]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[6]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'seg_data_1[7]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:109]
+CRITICAL WARNING: [Designutils 20-1307] Command '////////////////////////////////////VGAË°åÂ?åÊ≠•?†¥‰ø°Ë??///////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:111]
+CRITICAL WARNING: [Designutils 20-1307] Command '///////////////////////////////////////VGAÁ¥ÖË?çÁ??//////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:115]
+CRITICAL WARNING: [Designutils 20-1307] Command '/////////////////////////////////////////DACÊ®°Êì¨Â•òÊ??//////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'dac_ile'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'dac_cs_n'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'dac_wr1_n'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'dac_wr2_n'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'dac_xfer_n'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'dac_data[0]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'dac_data[1]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'dac_data[2]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'dac_data[3]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'dac_data[4]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'dac_data[5]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'dac_data[6]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'dac_data[7]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:143]
+CRITICAL WARNING: [Designutils 20-1307] Command '////////////////////////////////////////PS2/////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'ps2_clk'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'ps2_data'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:147]
+CRITICAL WARNING: [Designutils 20-1307] Command '/////////////////////////////////////////SDRAM//////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[18]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[17]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[16]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:153]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[15]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[14]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[13]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[12]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:157]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[11]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[10]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[9]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[8]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:161]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[7]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:162]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[6]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[5]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[4]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:165]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[3]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[2]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[1]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'sram_addr[0]'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'sram_ce_n'. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:171]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:171]
+CRITICAL WARNING: [Designutils 20-1307] Command '//////////////////////////////////32?ãpmodÁ´ØÂè£//////////////////////////////////////' is not supported in the xdc constraint file. [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc:194]
+Finished Parsing XDC File [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_mp3_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ZaG/Desktop/vivado_project/final/EGo1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_mp3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_mp3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2005.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2005.473 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2005.473 ; gain = 586.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2005.473 ; gain = 586.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_top_vga/u_Vga_25MH. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_top_vga/u_Pattern/u_BRAM_image_g. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_top_vga/u_Pattern/u_BRAM_image_b. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_top_dac/u_pcm_rom/u_BRAM_pcm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_top_vga/u_Pattern/u_BRAM_image_r. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2005.473 ; gain = 586.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2005.473 ; gain = 586.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 3     
+	   2 Input   27 Bit       Adders := 2     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 5     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               33 Bit    Registers := 3     
+	               27 Bit    Registers := 2     
+	               17 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input   33 Bit        Muxes := 6     
+	   2 Input   27 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 5     
+	   4 Input    8 Bit        Muxes := 1     
+	 226 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 12    
+	   2 Input    2 Bit        Muxes := 2     
+	 226 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP u_top_vga/u_Pattern/image_idx1, operation Mode is: (D+(A:0x3fffffb0))*(B:0xf0).
+DSP Report: operator u_top_vga/u_Pattern/image_idx1 is absorbed into DSP u_top_vga/u_Pattern/image_idx1.
+DSP Report: operator u_top_vga/u_Pattern/image_idx2 is absorbed into DSP u_top_vga/u_Pattern/image_idx1.
+DSP Report: Generating DSP u_top_vga/u_Pattern/image_idx0, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff38).
+DSP Report: operator u_top_vga/u_Pattern/image_idx0 is absorbed into DSP u_top_vga/u_Pattern/image_idx0.
+WARNING: [Synth 8-7129] Port led_pin[4] in module top_mp3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_pin[3] in module top_mp3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_pin[2] in module top_mp3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_pin[1] in module top_mp3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led_pin[0] in module top_mp3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn_pin[3] in module top_mp3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn_pin[0] in module top_mp3 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2005.473 ; gain = 586.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Pattern     | pause_r    | 256x4         | LUT            | 
+|Pattern     | pause_g    | 256x4         | LUT            | 
+|Pattern     | pause_b    | 256x4         | LUT            | 
+|top_mp3     | p_0_out    | 256x4         | LUT            | 
+|top_mp3     | p_0_out    | 256x4         | LUT            | 
+|top_mp3     | p_0_out    | 256x4         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Pattern     | (D+(A:0x3fffffb0))*(B:0xf0)       | 17     | 8      | -      | 10     | 25     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|top_mp3     | PCIN+(A:0x0):B+(C:0xffffffffff38) | 30     | 10     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2005.473 ; gain = 586.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2005.473 ; gain = 586.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2005.473 ; gain = 586.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2011.750 ; gain = 592.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2011.750 ; gain = 592.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2011.750 ; gain = 592.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2011.750 ; gain = 592.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2011.750 ; gain = 592.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2011.750 ; gain = 592.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Pattern     | D+A*B         | 30     | 8      | -      | 10     | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|top_mp3     | (PCIN+A:B+C)' | 0      | 10     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |BRAM_pcm      |         1|
+|2     |Vga_25MH      |         1|
+|3     |BRAM_image_r  |         1|
+|4     |BRAM_image_g  |         1|
+|5     |BRAM_image_b  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |BRAM_image_b |     1|
+|2     |BRAM_image_g |     1|
+|3     |BRAM_image_r |     1|
+|4     |BRAM_pcm     |     1|
+|5     |Vga_25MH     |     1|
+|6     |BUFG         |     2|
+|7     |CARRY4       |    47|
+|8     |DSP48E1      |     2|
+|10    |LUT1         |    14|
+|11    |LUT2         |    93|
+|12    |LUT3         |    27|
+|13    |LUT4         |   147|
+|14    |LUT5         |    42|
+|15    |LUT6         |   141|
+|16    |MUXF7        |    24|
+|17    |MUXF8        |    12|
+|18    |FDCE         |   243|
+|19    |FDPE         |     2|
+|20    |IBUF         |     5|
+|21    |OBUF         |    19|
+|22    |OBUFT        |     5|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2011.750 ; gain = 592.461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 2011.750 ; gain = 511.531
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2011.750 ; gain = 592.461
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2023.777 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 85 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2027.465 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 3e2e9a95
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 129 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 2027.465 ; gain = 989.375
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ZaG/Desktop/vivado_project/final/final/final.runs/synth_1/top_mp3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_mp3_utilization_synth.rpt -pb top_mp3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 22 16:32:32 2024...
